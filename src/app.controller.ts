@@ -7,6 +7,6 @@ export class AppController {
 
   @Get()
   getDocuments(): Promise<any> {
-    return this.appService.getDocument('clients');
+    return this.appService.getDocument('users');
   }
 }

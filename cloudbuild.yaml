@@ -17,11 +17,11 @@ steps:
     args:
     - 'run'
     - 'deploy'
-    - $_SERVICE_NAME
+    - '$_SERVICE_NAME'
     - '--image'
     - 'gcr.io/$PROJECT_ID/$_SERVICE_NAME:$COMMIT_SHA'
     - '--region'
-    - 'us-central1'
+    - '$_REGION_NAME'
     - '--verbosity=debug' # to get more detailed error information
     - '--allow-unauthenticated' # Allow unauthenticated access
 images:
